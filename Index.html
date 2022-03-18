@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <title>Currency Converter</title>
+</head>
+
+<body>
+    <div id="header">
+        <h1>Money Converter</h1>
+    </div>
+
+    <div id="Main">
+
+        <p class="select-input-label">Convert <b>from</b></p>
+        <select id="select-up">
+            <option>R$ Real Brasileiro</option>
+            <option>US$ Dólar Americano</option>
+            <option>€ Euro</option>
+        </select>
+
+        <p class="select-input-label">Convert <b>to</b></p>
+        <select id="select-down">
+            <option>US$ Dólar Americano</option>
+            <option>€ Euro</option>
+            <option>R$ Real Brasileiro</option>
+        </select>
+
+        <p class="select-input-label"><b>Value</b></p>
+
+        <input id="input" placeholder="R$ 10.000,00" type="number" />
+
+
+        <button id="button">Convert</button>
+
+        <div id="button-container">
+            <div class="currency-container">
+                <img id="currency-image-up" src="./img/brasil 2.svg" />
+                <p id="currency-text-up" class="currency-text">Real</p>
+                <p id="currency-Text-Value-up" class="currency-value">R$ 10.000,00</p>
+            </div>
+
+            <img src="./img/Arrow.svg" id="arrow">
+
+            <div class="currency-container">
+                <img id="currency-image" src="./img/estados-unidos (1) 1.svg" />
+                <p id="currency-text" class="currency-text">Dólar Americano</p>
+                <p id="currency-Text-Value" class="currency-value">US$ 2.000,00</p>
+            </div>
+
+            <div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script src="./scripts.js">
+
+</script>
+
+</html>
